@@ -1,0 +1,13 @@
+/* Hexagon Clip Path */
+.clip-hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    border: 2px solid yellow;
+    background-color: #0F172A; /* Adjust color */
+    width: 330px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  

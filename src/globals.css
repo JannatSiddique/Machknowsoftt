@@ -1,0 +1,79 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-gradient-to-b from-[#0a0f1e] to-[#020617] text-white;
+}
+
+/* Background Texture */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Hexagon Container */
+.hexagon-container {
+  @apply relative flex justify-center flex-wrap w-full h-[600px] md:h-[800px] mt-10;
+}
+
+/* Hexagon Base */
+.hex {
+  position: absolute;
+  width: 150px; /* Adjust width */
+  height: 173px; /* Maintain proportion */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: url('#goo');
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hexagon Shape */
+.hex::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #0F172A; /* Background color */
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border: 3px solid #F5B041; /* Golden Border */
+  box-shadow: 0 0 10px rgba(245, 176, 65, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.hex:hover {
+  transform: scale(1.05);
+}
+
+.hex:hover::before {
+  box-shadow: 0 0 20px rgba(245, 176, 65, 1);
+}
+
+/* Right-to-Left Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInRight 0.7s ease-in-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -12,7 +12,7 @@ const Footer = () => {
             src="/logo.png" 
             alt="Logo" 
             width={900} 
-            height={300} 
+            height={300}
             className="cursor-pointer w-[90%] sm:w-auto"
           />
           <p className="text-lg text-[#6F7B8D] mt-6">

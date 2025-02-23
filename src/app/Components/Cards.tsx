@@ -93,7 +93,7 @@ const Cards = () => {
               />
             </div>
 
-            {/* Title and description aligned to the left */}
+            
             <h3 className="text-4xl font-semibold text-white ml-4 mb-4 text-left">
               {item.title}
             </h3>

@@ -69,7 +69,7 @@ const SquareSection = () => {
           <p className="text-sm text-gray-300 mt-2">{squares[0].description}</p>
         </div>
 
-        {/* Bottom Two Squares (Centered) */}
+        
         <div className="flex justify-center gap-6 w-full">
   {squares.slice(1).map((square, index) => (
     <div

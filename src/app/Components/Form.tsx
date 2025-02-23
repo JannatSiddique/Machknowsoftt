@@ -37,7 +37,7 @@ export default function ProjectIdeaForm() {
         Have A Project Idea?
       </h2>
 
-      {/* Form Container (Increased Width) */}
+    
       <div className="relative z-10 w-[650px] max-w-full bg-[#0F172A] backdrop-blur-md p-6 md:p-10 rounded-xl shadow-xl">
         <form onSubmit={handleSubmit} className="space-y-6">
           

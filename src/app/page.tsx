@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "./Hero";
 import Cards from "./Components/Cards";
 import ProjectSection from "./Components/Project";

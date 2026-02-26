@@ -4,11 +4,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
-import { usePathname } from "next/navigation"; 
 
 const Navbar = ({ setActiveSection }: { setActiveSection: (section: string) => void }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); 
   const [activeTab, setActiveTab] = useState(""); 
 
   return (
@@ -29,7 +27,7 @@ const Navbar = ({ setActiveSection }: { setActiveSection: (section: string) => v
             className={`relative hover:text-yellow-500 ${activeTab === "projects" ? "border-b-4 border-yellow-500" : ""}`}
             onClick={() => {
               setActiveTab("projects");
-              setActiveSection("projects"); // Set active section to show project image
+              setActiveSection("projects");
             }}
           >
             <Link href="/Project">Projects</Link>
